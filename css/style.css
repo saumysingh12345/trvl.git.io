@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,800;1,300;1,400&display=swap');
+
+*{
+    margin: 0;  /*brouser ke default margin aur padding hoti jisko hm yaha reset kar sakate hai*/
+    padding: 0;
+    box-sizing: border-box;  /*boder ke andar padding dene par border aur na fail jayte  */ 
+}
+
+body{
+    font-family:  'Montserrat', sans-serif;
+}
+
+.container{
+     
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.header{      
+    height: 95vh;
+    background:   url('../image/vasu-pendyala-Igb3ehcAmqI-unsplash.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo , .header .navbar a {
+    color: rgb(251, 255, 0);
+    margin-top: 1em;
+
+}
+
+html{
+    font-size: 62.5%;  /*almost equle to 16*62.5/100 = 10  px*/
+}
+
+.header .navbar{
+
+   
+}
+
+ul li{
+    list-style: none;
+    margin-top: 2em;
+    letter-spacing: 0.15em;
+    
+    font-weight: 600;  /*ye jitna jada hoga letter utana hi bold haga, aur jo upar google se import kiya hai usi me se select karna hai*/
+}
+
+a {
+    font-size: 1.6rem;  /*(10px).(1.6) = 16px*/
+    text-decoration: none;
+    font-size: 2.5rem;
+     
+}
+
+h1,h2,h3,p{   /*by defaut sabhi h1 h2 h3 me yhi parameter set honge*/
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    margin-top: 2rem;
+    color: yellow;
+}
+.navbar .logo{
+ float: left;
+  font-size: 3.5rem;  /*  10*3.5= 35px  */
+  
+ font-weight: 800;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid red;
+}
+
+
+ .navbar .nav-items{
+    float: right;
+    margin-top: 2rem;
+     
+}
+ .navbar .nav-item{
+   display: inline-block;
+   padding-left: 15px;
+   
+ }
+ 
+
+ .large-heading{
+    font-weight: 800;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 00.5em 0;
+    border-radius: 10rem;
+}
+
+.btn-primary{
+    background-color: seashell;
+
+}
+
+.btn-secondary{
+     border: 2px solid red;
+     font-weight: 600;
+     font-size: small;
+}
+
+.btn-primary:hover{
+    background: #ccc;
+}
+
+.btn-secondary:hover{
+    background: #ddd;
+}
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(10, 3, 3, 0.01),rgba(0, 0, 0, 0.01));
+     
+}
+
+.center{
+    text-align: center
+}
+
+
+
+.navbar::after{  /*float use karne ke baad ye line likhani hi padegi*/
+    content: '';
+    display: block;
+    clear: both;
+}  
+
+
+ /* ########################## showcase section coading ##################### */
+
+ .showcase{
+     background: #ddd;
+     padding: 10rem 0px; /*first one for top and bottom and second one is for left and right*/
+ }
+
+ .row{
+     height: 350px;
+     background: #fff;
+     box-shadow: 0px 0px 20px 0px #aaa;
+ }
+
+ .row1{
+     margin-bottom: 10rem;
+ }
+
+ .row .text-box h2{
+     font-size: large;
+     font-weight: 800;
+     color: black;
+ }
+ .row .text-box p{
+    font-size:small;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: rgb(44, 22, 22);
+}
+
+ .row1 .img-box , .row2 .text-box {
+      float: left;     
+      width: 50%;
+}
+ .row2 .img-box , .row1 .text-box {
+      float: right;     
+      width: 50%;
+}
+
+.showcase .img-box{
+    height: 100%;
+}
+
+.showcase .text-box{
+    padding: 3rem;
+}
+
+.row img{
+    display: inline-block; 
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* aspect ratio bigdega nahi*/
+}
+
+
+
+.row::after{  /*float use karne ke baad ye line likhani hi padegi*/
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ##################### feature section ######################## */
+
+.featuress{
+    
+     height: 350px;
+     text-align: center; 
+}
+ 
+
+.boxwrap{
+    
+    height: 200px;
+    width: 75%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 12%;
+    text-align: center;
+    
+}
+ 
+ 
+
+.fet{
+     
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+    text-align: center;
+    padding: 2rem;
+   
+}
+
+.fet h2,p{
+    color:white;
+}
+ 
+.adventure{
+     
+    float: left;
+    background-color: black;
+}
+
+.less-price{
+    float: left;
+    background-color: blue;
+}
+
+.experience{
+    float: left; 
+    background-color: black;
+}
+
+.boxwrap::after{ 
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ############   about.html page  ######################## */
+
+.backgnd{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.tex-col{
+    text-decoration: none;
+    color: yellow;
+}
+
+.aboutUs{
+    padding: 0 auto;
+    
+    
+}
+.aboutUs .aboutUs1{
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.aboutUs h2{
+    color: black;
+    border-bottom: red solid 3px ;
+    font-size: x-large;
+    font-weight: 800;
+}
+.aboutUs p{
+    color: black;
+}
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+/* code for tick mark  */
+.about-wrapper li::before{
+    content: '\2713';
+    color: red;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+/* now have to clear the float item  */
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-num h3{
+    color: black;
+    font-weight: 600;
+}
+
+.about-num span{
+    font-weight: 800;
+    font-size: x-large;
+    color: red;
+}
+
+.about-num .num1{
+    float: left;
+    width: 25%;
+}
+
+.about-num .num2{
+    float: left;
+    width: 25%;
+
+}
+.aboutUs1 .num3{
+    float: left;
+    width: 25%;
+
+}
+.aboutUs1 .num4{
+    float: left;
+    width: 25%;
+
+}
+
+.about-num{
+    margin-top: 5rem;
+    text-align: center;
+     
+}
+.aboutUs1 .about-num::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.about-block{
+    border: red solid 10px;
+    background: linear-gradient(25deg,red,rgb(119, 56, 56) 50%);
+    margin-top: 4rem;
+}
+
+.about-block h3{
+    
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    margin-top: 40px;
+     
+}
+
+.about-block h1{
+    font-size: large;
+    color: white;
+    padding: 2rem;
+    border: white 4px solid;
+    font-weight: 800;
+}
+
+.texl{
+    float: left;
+}
+
+.texr{
+    float: right;
+}
+
+.about-block::after{
+    content: '';
+    display: block;
+    clear: both;  
+}
+
+
+
+/* #################     contact page styling    ################# */
+
+
+
+.contact-form{
+    padding: 5rem 0;
+     
+}
+
+.form-wrapper{
+    border: 4px solid red;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+
+.company-address{
+    border: 4px dotted green;
+    float: left;
+    width: 49%;
+}
+
+.form{
+    border: 4px dotted black;
+    float: right;
+    width: 49%;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}  
+
+   /* #######################  Media Query  ################### */
+   
+   @media (max-width:500px){
+       html{
+           font-size: 8px;
+       }
+
+       .header .container{
+           width: 60%;
+           
+       }
+
+       .container .logo{
+           
+           
+           display: block;
+           float: none;
+           align-content: center;
+            
+       }
+
+       .navbar .nav-items{
+            
+           float: none;
+           margin-top: 0px;
+           
+       }
+       
+       .container a{
+           
+           font-size: 0.8rem;
+            
+       }
+
+
+       /* ############## show case sectiion ################### */
+
+    .row{
+        height: 500px;
+    }   
+
+    .row1 .img-box , .row2 .text-box {
+        float: none; 
+        height: 50%;    
+        width: 100%; 
+        }
+   .row2 .img-box , .row1 .text-box {
+        float: none;     
+        height: 50%;
+        width: 100%;  
+     }
+    
+     .row .text-box p{
+         font-size: 1rem;
+     }
+    
+     
+
+     .fet{
+     
+        float: none;
+        display: block;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        padding: 2rem;
+       
+    } 
+
+
+    /* ######################################### about page   ################### */
+
+    .tex-col{
+        width: 100%;
+         
+        
+    }
+
+    .tex-col .navbar{
+        width: 100%;
+        padding-left: 20%;
+    }
+
+    .tex-col .logo{
+        padding-left: 0px;
+        font-size: x-large;
+         
+    }
+    
+    .tex-col .navbar{
+       
+    }
+
+    .aboutUs1 p{
+        font-weight: 600;       
+       
+    }
+    .about-block{
+        text-align: center;
+        height: 150px;
+        
+    }
+    .about-num span{
+        font-size: large;
+    }
+    
+    .about-block h3 { 
+        font-size: 0.9rem;
+       }
+
+    .about-block h1{
+         font-size: 1rem;
+    } 
+    
+    .texl{
+        float: none;
+    }
+    
+    .texr{
+        display: block;
+        padding-left: 20%;
+        float: none;
+        width: 80%;
+        
+    }
+  } 
+
